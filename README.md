@@ -1,6 +1,6 @@
 # Goal Show
 
-This is an open source, popular mastermind game application.
+This is an open source game aimed to score goals using chronometer.
 
 [Play Store](https://play.google.com/store/apps/details?id=com.ferid.app.goalshow)
 
