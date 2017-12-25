@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        applicationId "com.ferid.app.goalshow"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 12
+        versionName "2.3.1"
+
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+def supportLibVersion = "25.4.0"
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //support lib
+    compile "com.android.support:appcompat-v7:$supportLibVersion"
+    //design
+    compile "com.android.support:design:$supportLibVersion"
+    //for stop watch
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.5'
+}

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Goal Show</string>
+
+
+    <!-- Shared Preferences -->
+    <string name="sharedPreferences">GOAL_SHOW_PREF</string>
+    <!-- two player -->
+    <string name="two_is_opponent_left">TWO_IS_OPPONENT_LEFT</string>
+    <string name="two_left_opponent">/twoLeftOpponent.bin</string>
+    <string name="two_right_opponent">/twoRightOpponent.bin</string>
+    <!-- single player -->
+    <string name="pref_level">LEVEL</string>
+    <string name="one_is_opponent_left">ONE_IS_OPPONENT_LEFT</string>
+    <string name="one_left_opponent">/oneLeftOpponent.bin</string>
+    <string name="one_right_opponent">/oneRightOpponent.bin</string>
+
+
+    <!-- font families -->
+    <string name="fontFamilyCondensed">sans-serif-condensed</string>
+
+
+    <!-- Strings -->
+    <string name="singlePlayer">Single Player</string>
+    <string name="twoPlayer">Two Player</string>
+    <string name="level">Level&#160;</string>
+    <string name="zero">0</string>
+    <string name="zeroOutOfZero">0/0</string>
+
+    <!-- Menu -->
+    <string name="newGame">New Game</string>
+    <string name="showTutorial">Show Tutorial</string>
+    <string name="levelUp">Increase Level</string>
+    <string name="levelDown">Decrease Level</string>
+
+    <string name="matchStats">Match Stats</string>
+    <string name="line">-</string>
+    <string name="percentage">%</string>
+    <string name="result">Result</string>
+
+    <!-- Speaker comments -->
+    <string name="out">Out&#8230;</string>
+    <string name="goal">GOAL!</string>
+    <string name="speakerOnGoal">That\'s it</string>
+    <string name="noPosition">No Position</string>
+    <string name="shotOnTarget">Shot on Target</string>
+    <string name="shot">Accurate Shot</string>
+    <string name="niceAttack">Nice Attack</string>
+    <string name="noComment">Go Ahead</string>
+    <string name="possession">Possession</string>
+
+    <string name="tutorial">Tutorial</string>
+    <string name="scoreBoardLeft">Left Opponent\nScore Board</string>
+    <string name="scoreBoardRight">Right Opponent\nScore Board</string>
+    <string name="opportunityBoard">Shooting Opportunity</string>
+    <string name="playArea">Tap on this Play Area to start and stop the chronometer.</string>
+    <string name="score1000">You need to make in between 901 and 1000 (both numbers included) to score a goal.</string>
+</resources>

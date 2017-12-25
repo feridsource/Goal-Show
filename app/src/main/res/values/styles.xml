@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Main Theme -->
+    <style name="Theme.MyTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colourPrimary</item>
+        <item name="colorPrimaryDark">@color/colourPrimaryDark</item>
+        <item name="colorAccent">@color/colourAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="MatchStatsTitleTextView">
+        <item name="android:textSize">@dimen/game_over_text_size</item>
+        <item name="android:textColor">@color/colourPrimaryDark</item>
+        <item name="android:fontFamily">@string/fontFamilyCondensed</item>
+    </style>
+
+</resources>

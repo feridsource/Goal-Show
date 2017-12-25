@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_opportunity">15</integer>
+    
+    <integer name="goalHigh">1000</integer>
+    <integer name="goalLow">991</integer>
+    <integer name="shotOnTarget">950</integer>
+    <integer name="shot">900</integer>
+    <integer name="possession">875</integer>
+
+    <integer name="waitAfterShot">750</integer>
+
+    <!-- machine player -->
+    <integer name="waitAfterHuman">1250</integer>
+    <integer name="machineOutHigh">1015</integer>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+
+    <color name="leftOpponent">#1B5E20</color>
+    <color name="rightOpponent">#0D47A1</color>
+
+    <!-- theme -->
+    <color name="colourAccent">#FFEB3B</color>
+    <color name="colourPrimary">#9E9E9E</color>
+    <color name="colourPrimaryDark">#616161</color>
+
+    <color name="textColour">@color/white</color>
+    <color name="dividerColour">@color/white</color>
+</resources>
