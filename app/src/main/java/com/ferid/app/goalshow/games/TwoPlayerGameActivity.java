@@ -19,6 +19,8 @@ import com.ferid.app.goalshow.prefs.PrefsUtil;
 
 import org.apache.commons.lang3.time.StopWatch;
 
+import java.util.Locale;
+
 
 public class TwoPlayerGameActivity extends AppCompatActivity {
 
@@ -37,8 +39,8 @@ public class TwoPlayerGameActivity extends AppCompatActivity {
     private TextView timer;
 
     //muscles
-    private Handler handler = new Handler();
-    private StopWatch stopWatch = new StopWatch();
+    private final Handler handler = new Handler();
+    private final StopWatch stopWatch = new StopWatch();
 
     //limbs
     private boolean isOpponentLeft = true;
@@ -55,17 +57,17 @@ public class TwoPlayerGameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        scoreLeft = (TextView) findViewById(R.id.scoreLeft);
-        scoreRight = (TextView) findViewById(R.id.scoreRight);
-        scoringOpportunityLeft = (TextView) findViewById(R.id.scoringOpportunityLeft);
-        scoringOpportunityRight = (TextView) findViewById(R.id.scoringOpportunityRight);
-        speaker = (TextView) findViewById(R.id.speaker);
+        scoreLeft = findViewById(R.id.scoreLeft);
+        scoreRight = findViewById(R.id.scoreRight);
+        scoringOpportunityLeft = findViewById(R.id.scoringOpportunityLeft);
+        scoringOpportunityRight = findViewById(R.id.scoringOpportunityRight);
+        speaker = findViewById(R.id.speaker);
 
-        playArea = (LinearLayout) findViewById(R.id.playArea);
-        timer = (TextView) findViewById(R.id.timer);
+        playArea = findViewById(R.id.playArea);
+        timer = findViewById(R.id.timer);
 
         playArea.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -144,7 +146,7 @@ public class TwoPlayerGameActivity extends AppCompatActivity {
      * Show the latest time
      */
     private void showLatestTimer() {
-        timer.setText("" + stopWatch.getTime());
+        timer.setText(String.valueOf(stopWatch.getTime()));
     }
 
     /**
@@ -270,18 +272,20 @@ public class TwoPlayerGameActivity extends AppCompatActivity {
      * Write left and right scores
      */
     private void setScore() {
-        scoreLeft.setText("" + leftOpponent.getGoal());
-        scoreRight.setText("" + rightOpponent.getGoal());
+        scoreLeft.setText(String.valueOf(leftOpponent.getGoal()));
+        scoreRight.setText(String.valueOf(rightOpponent.getGoal()));
     }
 
     /**
      * Write left and right opportunities
      */
     private void setOpportunity() {
-        scoringOpportunityLeft.setText(leftOpponent.getOpportunity()
-                + "/" + getResources().getInteger(R.integer.max_opportunity));
-        scoringOpportunityRight.setText(rightOpponent.getOpportunity()
-                + "/" + getResources().getInteger(R.integer.max_opportunity));
+        scoringOpportunityLeft.setText(String.format(Locale.getDefault(), "%d/%d",
+                leftOpponent.getOpportunity(),
+                getResources().getInteger(R.integer.max_opportunity)));
+        scoringOpportunityRight.setText(String.format(Locale.getDefault(), "%d/%d",
+                rightOpponent.getOpportunity(),
+                getResources().getInteger(R.integer.max_opportunity)));
     }
 
     /**

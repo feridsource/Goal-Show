@@ -8,20 +8,20 @@
         android:title="@string/newGame"
         android:icon="@drawable/ic_new_game"
         android:orderInCategory="3"
-        app:showAsAction="always"/>
+        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/levelUp"
         android:title="@string/levelUp"
         android:icon="@drawable/ic_level_up"
         android:orderInCategory="2"
-        app:showAsAction="always"/>
+        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/levelDown"
         android:title="@string/levelDown"
         android:icon="@drawable/ic_level_down"
         android:orderInCategory="1"
-        app:showAsAction="always"/>
+        app:showAsAction="ifRoom"/>
 
 </menu>

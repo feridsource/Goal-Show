@@ -1,15 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 27
 
     defaultConfig {
         applicationId "com.ferid.app.goalshow"
         minSdkVersion 16
-        targetSdkVersion 25
+        targetSdkVersion 27
         versionCode 12
-        versionName "2.3.1"
+        versionName "2.3.2"
 
         vectorDrawables.useSupportLibrary = true
     }
@@ -21,14 +20,14 @@ android {
     }
 }
 
-def supportLibVersion = "25.4.0"
+def supportLibVersion = "27.1.1"
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     //support lib
-    compile "com.android.support:appcompat-v7:$supportLibVersion"
+    implementation "com.android.support:appcompat-v7:$supportLibVersion"
     //design
-    compile "com.android.support:design:$supportLibVersion"
+    implementation "com.android.support:design:$supportLibVersion"
     //for stop watch
-    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.5'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.7'
 }

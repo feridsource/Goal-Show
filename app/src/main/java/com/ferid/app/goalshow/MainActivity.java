@@ -26,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        twoPlayerGame = (RelativeLayout) findViewById(R.id.twoPlayerGame);
-        singlePlayerGame = (RelativeLayout) findViewById(R.id.singlePlayerGame);
+        twoPlayerGame = findViewById(R.id.twoPlayerGame);
+        singlePlayerGame = findViewById(R.id.singlePlayerGame);
 
         setListeners();
     }

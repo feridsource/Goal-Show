@@ -5,12 +5,12 @@ package com.ferid.app.goalshow.enums;
  */
 public enum GameLevel {
     LEVEL_MIN(500),
-    LEVEL_2(750),
+    LEVEL_MID(750),
     LEVEL_MAX(875);
 
     private final int value;
 
-    private GameLevel(int value) {
+    GameLevel(int value) {
         this.value = value;
     }
     public int getValue() {

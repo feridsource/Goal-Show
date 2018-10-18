@@ -5,5 +5,5 @@ package com.ferid.app.goalshow.enums;
  */
 public enum TimerState {
     START,
-    STOP;
+    STOP
 }

@@ -24,7 +24,7 @@ public class TutorialActivity extends AppCompatActivity {
      * Set toolbar
      */
     private void setToolbar() {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         if (getSupportActionBar() != null) {

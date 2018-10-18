@@ -40,14 +40,14 @@ public class GameOverActivity extends AppCompatActivity {
 
         setToolbar();
 
-        opponentLeftScore = (TextView) findViewById(R.id.opponentLeftScore);
-        opponentRightScore = (TextView) findViewById(R.id.opponentRightScore);
-        opponentLeftShotOnTarget = (TextView) findViewById(R.id.opponentLeftShotOnTarget);
-        opponentRightShotOnTarget = (TextView) findViewById(R.id.opponentRightShotOnTarget);
-        opponentLeftShot = (TextView) findViewById(R.id.opponentLeftShot);
-        opponentRightShot = (TextView) findViewById(R.id.opponentRightShot);
-        opponentLeftPossession = (TextView) findViewById(R.id.opponentLeftPossession);
-        opponentRightPossession = (TextView) findViewById(R.id.opponentRightPossession);
+        opponentLeftScore = findViewById(R.id.opponentLeftScore);
+        opponentRightScore = findViewById(R.id.opponentRightScore);
+        opponentLeftShotOnTarget = findViewById(R.id.opponentLeftShotOnTarget);
+        opponentRightShotOnTarget = findViewById(R.id.opponentRightShotOnTarget);
+        opponentLeftShot = findViewById(R.id.opponentLeftShot);
+        opponentRightShot = findViewById(R.id.opponentRightShot);
+        opponentLeftPossession = findViewById(R.id.opponentLeftPossession);
+        opponentRightPossession = findViewById(R.id.opponentRightPossession);
 
         setMatchStats();
     }
@@ -56,7 +56,7 @@ public class GameOverActivity extends AppCompatActivity {
      * Set toolbar
      */
     private void setToolbar() {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         if (getSupportActionBar() != null) {
@@ -69,12 +69,12 @@ public class GameOverActivity extends AppCompatActivity {
      * Show match stats
      */
     private void setMatchStats() {
-        opponentLeftScore.setText("" + leftOpponent.getGoal());
-        opponentRightScore.setText("" + rightOpponent.getGoal());
-        opponentLeftShotOnTarget.setText("" + leftOpponent.getShotOnTarget());
-        opponentRightShotOnTarget.setText("" + rightOpponent.getShotOnTarget());
-        opponentLeftShot.setText("" + leftOpponent.getShot());
-        opponentRightShot.setText("" + rightOpponent.getShot());
+        opponentLeftScore.setText(String.valueOf(leftOpponent.getGoal()));
+        opponentRightScore.setText(String.valueOf(rightOpponent.getGoal()));
+        opponentLeftShotOnTarget.setText(String.valueOf(leftOpponent.getShotOnTarget()));
+        opponentRightShotOnTarget.setText(String.valueOf(rightOpponent.getShotOnTarget()));
+        opponentLeftShot.setText(String.valueOf(leftOpponent.getShot()));
+        opponentRightShot.setText(String.valueOf(rightOpponent.getShot()));
 
         //calculate possession
         int leftPossessionNumber = leftOpponent.getPossession();
@@ -84,8 +84,8 @@ public class GameOverActivity extends AppCompatActivity {
                 = (int) ((((double) leftPossessionNumber) / totalPossessionNumber) * 100);
         int rightPossessionRatio = 100 - leftPossessionRatio;
 
-        opponentLeftPossession.setText("" + leftPossessionRatio);
-        opponentRightPossession.setText("" + rightPossessionRatio);
+        opponentLeftPossession.setText(String.valueOf(leftPossessionRatio));
+        opponentRightPossession.setText(String.valueOf(rightPossessionRatio));
     }
 
     private void closeWindow() {
