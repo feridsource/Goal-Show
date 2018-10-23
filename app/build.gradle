@@ -7,14 +7,14 @@ android {
         applicationId "com.ferid.app.goalshow"
         minSdkVersion 16
         targetSdkVersion 27
-        versionCode 12
+        versionCode 13
         versionName "2.3.2"
 
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
