@@ -28,6 +28,4 @@ dependencies {
     implementation "com.android.support:appcompat-v7:$supportLibVersion"
     //design
     implementation "com.android.support:design:$supportLibVersion"
-    //for stop watch
-    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.7'
 }

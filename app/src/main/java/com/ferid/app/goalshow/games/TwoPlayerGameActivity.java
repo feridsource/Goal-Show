@@ -21,7 +21,9 @@ import org.apache.commons.lang3.time.StopWatch;
 
 import java.util.Locale;
 
-
+/**
+ * Created by vito on 9/30/2015.
+ */
 public class TwoPlayerGameActivity extends AppCompatActivity {
 
     //score board
