@@ -7,7 +7,7 @@ This is an open source game aimed to score goals using chronometer.
 
 # Licence
 
-Copyright (C) 2016 Ferid Cafer
+Copyright (C) 2015 Ferid Cafer
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
